@@ -257,11 +257,9 @@ SIH2026-Miner-Safety-System/
 └── submission/
     ├── presentation/
     └── demo/
+```
 
-##12. Project Status
-
-```text
-SIH2026-Miner-Safety-System/
+## 12. Project Status
 
 JEEVAN SETU is being developed as a prototype for Smart India
 Hackathon 2026.
@@ -270,35 +268,26 @@ The current development focuses on integrating the worker
 monitoring unit, reconnaissance rover and control station into a
 single emergency-to-rescue workflow.
 
-##13. Research and References
-
-```text
-SIH2026-Miner-Safety-System/
+## 13. Research and References
 
 The project has referred to existing work and technical
 documentation related to:
 
-Mine rescue robots
-Underground mine mapping
-Gas and environmental sensing
-ESP32 and MPU6050
-LiDAR systems
-ROS 2 and Nav2
-YOLO
-Streamlit
+- Mine rescue robots
+- Underground mine mapping
+- Gas and environmental sensing
+- ESP32 and MPU6050
+- LiDAR systems
+- ROS 2 and Nav2
+- YOLO
+- Streamlit
 
 Detailed references used during the development are documented
-separately in the docs/ directory.
+separately in the `docs/` directory.
 
-##14. Team
+## 14. Team
 
-```text
-SIH2026-Miner-Safety-System/
-
-Team Name: MINERDS
-
-Project: JEEVAN SETU
-
-Smart India Hackathon 2026
-
-Problem Statement ID: SIH26039
+- Team Name: MINERDS
+- Project: JEEVAN SETU
+- Event: Smart India Hackathon 2026
+- Problem Statement ID: SIH26039
