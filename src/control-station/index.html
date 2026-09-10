@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeevan Setu — Mine Control</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="brand">JEEVAN SETU</div>
+      <div class="subtitle">Underground Worker & Mine Rescue Control</div>
+    </div>
+    <div class="mode"><span class="dot online"></span> DEMO MODE</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">SURFACE CONTROL STATION</p>
+        <h1>Detect. Locate. Assess. Respond.</h1>
+        <p class="muted">Unified worker status, environmental risk and remote rover reconnaissance.</p>
+      </div>
+      <div class="actions">
+        <button class="btn ghost" id="resetBtn">Reset Demo</button>
+        <button class="btn danger" id="emergencyBtn">Simulate Emergency</button>
+      </div>
+    </section>
+
+    <section class="cards four" id="summaryCards"></section>
+
+    <section class="grid two">
+      <div class="panel">
+        <div class="panel-head"><h2>Active Workers</h2><span class="muted" id="workerUpdated">Live</span></div>
+        <div class="workers" id="workers"></div>
+      </div>
+
+      <div class="panel alert-panel">
+        <div class="panel-head"><h2>Emergency Alerts</h2><span class="badge critical" id="criticalBadge">0 CRITICAL</span></div>
+        <div id="alerts" class="alerts"></div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="panel">
+        <div class="panel-head"><h2>Mine Zone Map</h2><span class="muted">Last-known worker zone</span></div>
+        <div class="mine-map" id="mineMap">
+          <div class="node n1" data-zone="N1">N1</div>
+          <div class="node n2" data-zone="N2">N2</div>
+          <div class="node n3" data-zone="N3">N3</div>
+          <div class="node n4" data-zone="N4">N4</div>
+          <div class="tunnel t1"></div><div class="tunnel t2"></div><div class="tunnel t3"></div>
+          <div class="legend"><span>● Safe</span><span class="yellow">● Warning</span><span class="red">● Critical</span></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Rescue Rover</h2><span id="roverStatus" class="badge safe">READY</span></div>
+        <div class="rover-view">
+          <div class="camera-placeholder">
+            <div class="camera-icon">◉</div>
+            <div>ESP32-CAM LIVE FEED</div>
+            <small>Demo stream placeholder</small>
+          </div>
+          <div class="rover-data" id="roverData"></div>
+        </div>
+        <div class="rover-actions">
+          <button class="btn primary" id="deployBtn">Deploy Rover</button>
+          <button class="btn ghost" id="resetRoverBtn">Reset Rover</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>Environment</h2><span class="muted">Latest reported values</span></div>
+      <div class="metrics" id="environment"></div>
+    </section>
+
+    <section class="panel pitch-panel">
+      <div class="pitch-label">CORE WORKFLOW</div>
+      <div class="workflow"><span>SENSE</span><b>→</b><span>COMMUNICATE</span><b>→</b><span>ANALYZE</span><b>→</b><span>ALERT</span><b>→</b><span>RECONNAISSANCE</span></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
