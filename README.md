@@ -257,6 +257,7 @@ SIH2026-Miner-Safety-System/
 └── submission/
     ├── presentation/
     └── demo/
+
 ##12. Project Status
 
 ```text
