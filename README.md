@@ -284,10 +284,3 @@ documentation related to:
 
 Detailed references used during the development are documented
 separately in the `docs/` directory.
-
-## 14. Team
-
-- Team Name: MINERDS
-- Project: JEEVAN SETU
-- Event: Smart India Hackathon 2026
-- Problem Statement ID: SIH26039
